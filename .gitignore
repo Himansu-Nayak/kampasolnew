@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large media files (exceeding GitHub 100MB limit)
+Admin1.mp4
+*.mp4
+*.mkv
+*.avi
+*.mov
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+salesnayak.db
+
+# Environments & dependencies
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
