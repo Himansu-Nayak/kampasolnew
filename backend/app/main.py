@@ -10,8 +10,12 @@ from backend.app.routers import (
     auth, dashboard, crm, erp, hrm, amc, complaint, accounts, production
 )
 
-# Initialize database schema
+# Initialize database schema and seed if not present
 Base.metadata.create_all(bind=engine)
+try:
+    seed_database()
+except Exception as e:
+    pass
 
 app = FastAPI(
     title="SalesNayak Enterprise Platform API",
